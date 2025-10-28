@@ -1,0 +1,118 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# PyTorch checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Model checkpoints and experiments
+experiment_outputs/
+OFA-base/
+OFA/
+
+# Datasets (large files - users should download separately)
+aeroscapes/
+uavid/
+droneSeg/
+udd6/
+dataset/
+ADEChallengeData2016/
+cocoapi/
+mmsegmentation/
+UCMerced_LandUse/
+Task02_Heart/
+Semantic segmentation datasetDubai/
+deepGlobeNew/
+rescueNet/
+RS/
+Extraction/
+MRI/
+
+# Output directories
+output/
+qsam_seg/
+vsw/
+temp/
+saved_txt/
+
+# Image files (test outputs)
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.tiff
+
+# Text files with mappings (keep some, exclude others)
+filenameMap.txt
+datsetMappings.txt
+myarray.txt
+twoBand.txt
+test.txt
+
+# Temporary and backup files
+junk.py
+mergejunk.py
+tossMe.py
+*_old.py
+*_OLD.py
+*ORIG.py
+*.py~
+
+# Shell scripts (keep main ones, exclude test variants)
+*OLD.sh
+*ORIG.sh
+
+# CSV results
+*.csv
+
+# Environment files (will be generated fresh)
+.env
+train.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Chrome installer (why is this here?)
+google-chrome-stable_current_amd64.deb
+
+# Specific large test images
+*.jpg
+*.jpeg
+*.png
+!README_images/*.png
+!README_images/*.jpg
+
+# Package archives
+*.deb
+*.rpm
+*.tar.gz
+*.zip
+
+# Allow essential config files
+!classColor.txt
+!classColorGT*.txt
+!classes.txt
