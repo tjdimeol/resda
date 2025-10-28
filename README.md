@@ -1,6 +1,10 @@
 # ReSDA: Research Extensions to Semantic Dataset Analysis
 
-**Three-stage semantic segmentation pipeline combining OFA baseline segmentation with SAM instance detection for improved minority class detection in aerial imagery.**
+**Three-stage semantic segmentation pipeline combining OFA baseline segmentation with SAM instance detection that:
+1. Finetunes the OFA/IfSeg pipline on aerial imagery
+2. Bounds the open vocabulary nature of images to ~120 domain specific classes
+3. Adds VLM prompt assisted identification for significant classes
+4. Improves minority class detection in the domain.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
