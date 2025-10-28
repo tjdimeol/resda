@@ -454,7 +454,7 @@ from openai import OpenAI
 
 # Qwen client for class identification (replacing GPT-4o)
 client = OpenAI(
-    api_key="sk-2b9d06aafce14f70a0070e22f7e0d6d3",
+    api_key=os.getenv('QWEN_API_KEY'),
     base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
 )
 
