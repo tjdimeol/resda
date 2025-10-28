@@ -9,8 +9,6 @@ ReSDA implements a three-stage pipeline that combines:
 2. **Qwen+SAM Instance Detection** - Detects bounded objects via bounding boxes and segments with SAM
 3. **Merge** - Overlays instance detections onto baseline for final output
 
-**Key Innovation:** Solves the minority class suppression problem in aerial imagery by using separate detection pipeline for small/bounded objects (person, car, bike) that get lost in ResNet refinement.
-
 ---
 
 ## Quick Start
@@ -435,36 +433,6 @@ for _ in range(25):  # 25 iterations
 
 ---
 
-## Contributing
-
-When modifying pipeline code:
-
-1. **Never change code you weren't asked to change**
-   - If user asks to "change the prompt", only change the prompt
-   - Ask before "fixing" or "improving" adjacent code
-
-2. **Test each stage independently before integration**
-   ```bash
-   # Test stage 1
-   conda activate resda
-   python resda_baseline_aero.py
-
-   # Test stage 2
-   conda activate tosam
-   python resda_sam_instance.py
-
-   # Test stage 3
-   conda activate tosam
-   python resdaEX_merge.py ./output/stage1_baseline.npz ./output/stage2_instances.npz
-   ```
-
-3. **Document all changes in this README**
-   - Add to TODOs if incomplete
-   - Update architecture diagrams if pipeline changes
-   - Add to Troubleshooting if you hit issues
-
----
-
 ## License
 
-Research code for academic use. Based on IFSeg (see original repository for license).
+MIT
